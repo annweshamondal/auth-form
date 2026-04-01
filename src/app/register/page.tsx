@@ -1,16 +1,10 @@
-import LoginForm from "@/components/customui/forms/LoginForm";
+import RegisterForm from "@/components/customui/forms/RegisterForm";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/shadcnui/card";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Login | Auth Form App",
-  description: "Login page of Auth Form app",
-};
 
 const page = () => {
   return (
@@ -19,11 +13,11 @@ const page = () => {
         <Card className="w-sm">
           <CardHeader>
             <CardTitle className="grid place-items-center text-2xl">
-              Login (Auth App)
+              REGISTER
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <LoginForm />
+            <RegisterForm />
           </CardContent>
         </Card>
       </section>
